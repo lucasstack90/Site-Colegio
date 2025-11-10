@@ -30,6 +30,26 @@ body{
     }
 
     .nav-link.active {
-      color: black;
+      color: rgb(9, 9, 9);
       font-weight: 600;
+    }
+
+    .carousel-item img {
+      height: 400px;            /* altura reduzida */
+      object-fit: cover;        /* mantém proporção e preenche o espaço */
+    }
+  
+    /* Indicadores mais elegantes */
+    .carousel-indicators [data-bs-target] {
+      background-color: #fff;
+      opacity: 0.7;
+    }
+    .carousel-indicators .active {
+      opacity: 1;
+    }
+  
+    /* Controles (setas) com cor personalizada */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(100%); /* deixa as setas brancas */
     }
