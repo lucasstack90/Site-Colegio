@@ -53,3 +53,11 @@ body{
     .carousel-control-next-icon {
       filter: invert(100%); /* deixa as setas brancas */
     }
+
+    .social-icons a {
+      transition: color 0.3s ease;
+    }
+    
+    .social-icons a:hover {
+      color: #ff9900; /* cor de destaque */
+    }
