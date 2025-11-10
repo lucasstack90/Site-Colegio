@@ -11,6 +11,39 @@
 <script src="js/bootstrap.js"></script>
 <script src="js/jquery-1.11.3.min.js"></script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<style>
+  .whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+.whatsapp-float:hover {
+  background-color: #20b85b;
+  transform: scale(1.1);
+  color: #fff;
+}
+.whatsapp-float i {
+  margin-top: 13px;
+}
+
+.posicionamento a{
+  display: inline-block;
+  margin: 10px 0 0 -3px;
+}
+</style>
+
 </head>
 
  <body>
@@ -28,19 +61,16 @@
         <a class="nav-link" href=""><strong>Ana News</strong></a>
         <a class="nav-link" href="https://wa.me/5542988346059"><strong>Contato</strong></a>
 
-        <div class="social-icons">
-          <a href="https://www.instagram.com/seu_perfil" target="_blank" class="text-white me-3" aria-label="Instagram">
-            <i class="fab fa-instagram fa-lg"></i>
-          </a>
-          <a href="https://www.facebook.com/seu_perfil" target="_blank" class="text-white" aria-label="Facebook">
-            <i class="fab fa-facebook fa-lg"></i>
-          </a>
-        </div>
-    
-      </div>
-
-      </nav>
+      <div class="position-absolute top-0 end-0 mt-3 me-3 posicionamento">
+         <a class="nav-link" href="https://facebook.com/seupagina" target="_blank" aria-label="Facebook">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a class="nav-link" href="https://instagram.com/seupagina" target="_blank" aria-label="Instagram">
+        <i class="bi bi-instagram"></i>
+      </a>
     </div>
+
+      </div>
   </header>
 
 
@@ -75,6 +105,12 @@
     </div>
   </section>
   
+  <a href="https://wa.me/5542999999999" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Fale conosco no WhatsApp">
+   <i class="bi bi-whatsapp"></i>
+</a>
 
 
   <footer class="text-white pt-4" style="background-color: rgba(0, 0, 0, 0.589);">
