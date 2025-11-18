@@ -79,6 +79,10 @@ header {
       color: rgb(223, 226, 5);
     }
 
+    .text-color{
+      color: #ba7e4d;
+    }
+
     .nav-link.active {
       color: rgb(9, 9, 9);
       font-weight: 600;
