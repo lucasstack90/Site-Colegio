@@ -141,3 +141,28 @@ header {
     width: 100%;
     position: absolute;
 }
+
+.section-colegio {
+    background: #27232300;
+    color: rgb(255, 255, 255);
+  }
+
+  .titulo-colegio {
+    font-weight: 700;
+    color: #255c90;
+  }
+
+  .descricao-colegio {
+    font-size: 1.1rem;
+    color: #a49c9c;
+  }
+
+  .lista-colegio li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    background-color: #1f2228;
+    border-color: #707986;
+  }
