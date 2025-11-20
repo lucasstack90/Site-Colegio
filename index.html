@@ -18,44 +18,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 
-
-<style>
-
-  .whatsapp-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 25px;
-  right: 25px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 32px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-  z-index: 1000;
-  transition: all 0.3s ease;
-}
-.whatsapp-float:hover {
-  background-color: #20b85b;
-  transform: scale(1.1);
-  color: #fff;
-}
-.whatsapp-float i {
-  margin-top: 13px;
-}
-
-.posicionamento a{
-  display: inline-block;
-  margin: 10px 0 0 -3px;
-}
-h3{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-}
-
-</style>
-
 </head>
  <body>
 
@@ -64,7 +26,7 @@ h3{
       <h1 class="site-title"><img src="img/Logo cabeçalho.png" alt=""></h1>
      <nav class="nav justify-content-center mt-3">
   <a class="nav-link link-home" href="index.html">Home</a>
-  <a class="nav-link link-news" href="#">AnaVanda News</a>
+  <a class="nav-link link-news" href="Noticias.html">AnaVanda News</a>
   <a class="nav-link link-contato" href="contato.html">Contato</a>
 </nav>
 
@@ -72,14 +34,38 @@ h3{
       </div>
   </header>
 
-<br>
-<br>
+  <br>
+  <br>
 
-  <section class="container my-5">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/Parabéns a nossos alunos que já estão brilhando nos vestibulares. Nosso aluno Diogo trilhará carreira na Medicina e nossa aluna Isabel cursará Veterin_2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/Parabéns a nossos alunos que já estão brilhando nos vestibulares. Nosso aluno Diogo trilhará carreira na Medicina e nossa aluna Isabel cursará Veterin_3.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imagens-AVB/img3.jpeg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  <br>
+
+   <section class="container my-5">
   <div class="text-center text-white">
 
     <h3 class="fw-bold mb-4">
-      Colégio Estadual Ana Vanda Bassara: Sua Jornada de Conhecimento do Fundamental ao Profissionalizante
+      Colégio Estadual Ana Vanda Bassara
     </h3>
 
     <div class="texto-central mx-auto">
@@ -97,32 +83,6 @@ h3{
 
   </div>
 </section>
-
-
-  <br>
-  <br>
-
-  <div id="carouselExampleFade" class="carousel slide carousel-fade">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="imagens-AVB/" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="imagens-AVB/img2.jpeg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="imagens-AVB/img3.jpeg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
   <br>
 
@@ -168,9 +128,14 @@ h3{
 
       <!-- TEXTO -->
       <div class="col-lg-6">
-        <h2 class="titulo-bloco">Sobre o Ana Vanda Cuidando Da Comunidade</h2>
+        <h2 class="titulo-bloco">Abertura do Programa Aluno Monitor 2025</h2>
         <p class="descricao-bloco">
-          Aqui você vai descobrir o que é o Ana Vanda Cuidando Da Comunidade e qual a importancia dele na vida dos moradores locais
+          Demos início ao Programa Aluno Monitor 2025!
+A partir de agora, nossos alunos participarão das atividades de monitoria, com foco na recomposição da aprendizagem, no fortalecimento do protagonismo juvenil e no desenvolvimento do currículo escolar.
+        </p>
+
+        <p class="descricao-bloco">
+          Além disso, os alunos que fizerem parte da monitoria terão mais oportunidades de serem selecionados para o Intercâmbio Ganhando o Mundo.
         </p>
 
         <a href="#" class="saiba-mais">
@@ -178,16 +143,30 @@ h3{
         </a>
       </div>
 
- <!-- VÍDEO -->
+ <!-- IMAGEM -->
       <div class="col-lg-6 mb-4 mb-lg-0">
         <div class="img-container">
-          <img src="img/ana vanda cuidando.jpeg" alt="" class="">
+          <img src="imagens-AVB/Abertura do Programa Aluno Monitor 2025_ foi dada a largada para a realização da monitoria com nossos alunos com foco na recomposição da aprendizagem e (.jpg" alt="" class="">
         </div>
       </div>
 
     </div>
   </div>
 </section>
+
+<section>
+  <div class="container my-4">
+    <h4 class="fw-bold mb-3">Vídeo da Notícia</h4>
+
+    <div class="Yvideo-container">
+        <video controls poster="img/ChatGPT Image 20_11_2025, 17_05_09.png">
+            <source src="Vídeos/❤️❤️Primeiro dia de aula foi de aquecer o ❤️❤️(MP4).mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+    </div>
+</div>
+</section>
+
 
 
 
@@ -238,8 +217,8 @@ h3{
             
           </p>
           <div class="social-icons">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/anavanda.bassara.3/?locale=pt_BR" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/cavbanavandabassara/#" target="_blank"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
       </div>
