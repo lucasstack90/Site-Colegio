@@ -226,6 +226,14 @@ h3 {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
+.img-container{
+  width: 100%;
+  max-width: 900px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
 /* Google Maps responsivo */
 .map-responsive {
   overflow: hidden;
