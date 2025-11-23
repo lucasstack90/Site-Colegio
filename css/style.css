@@ -115,11 +115,31 @@ header {
   box-shadow: 0 0 20px rgba(0,0,0,0.15);
 }
 
+/* Vídeo primeiro dia de aula*/
+.Avideo-container{
+padding: 20px;
+border-radius: 25px;
+}
 
 
+.video-title{
+font-size: 1.6rem;
+font-weight: bold;
+margin-bottom: 15px;
+text-align: center;
+}
+
+
+
+/* Img Logo e Titulo */
 .site-title img {
-  width: 250px;
-  aspect-ratio: 3/2;
+  width: 150px;
+  aspect-ratio: 4/2;
+}
+
+/* img rodapé */
+.logo-rodapé{
+  margin-top: 30px;
 }
 
 /* =============================
