@@ -57,6 +57,16 @@ header {
   font-family: 'Montserrat', sans-serif;
 }
 
+.logo {
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+
 
 /* Área do bloco */
 .bloco-bilingue {
@@ -66,7 +76,7 @@ header {
 
 /* Título */
 .titulo-bloco {
-  font-size: 2.2rem;
+  font-size: 27px;
   font-weight: 700;
   color: #5a2cff; /* roxo igual ao da imagem */
   margin-bottom: 20px;
@@ -190,6 +200,18 @@ text-align: center;
   font-weight: 600;
 }
 
+
+/* Do Rodapé */
+.txt-hover {
+  color: white;
+  transition: text-shadow 0.3s ease;
+}
+
+.txt-hover:hover {
+  text-shadow: 0 0 10px rgb(251, 251, 251);
+}
+
+
 /* =============================
    TEXTOS PRINCIPAIS
 ============================= */
@@ -274,11 +296,12 @@ h3 {
   color: #e28214;
   font-size: 1.6rem;
   margin-right: 20px;
-  transition: color 0.3s ease;
+  transition: text-shadow 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #ad630f;;
+  text-shadow: 0 0 10px #ad630f;
+
 }
 
 /* =============================
