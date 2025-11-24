@@ -129,6 +129,13 @@ margin-bottom: 15px;
 text-align: center;
 }
 
+/* Vídeo primeiro dia de aula*/
+.text-video{
+  color: white;
+  text-align: center;
+  margin: 6px;
+}
+
 
 
 /* Img Logo e Titulo */
@@ -264,14 +271,14 @@ h3 {
    ÍCONES SOCIAIS
 ============================= */
 .social-icons a {
-  color: #E86A00;
+  color: #e28214;
   font-size: 1.6rem;
   margin-right: 20px;
   transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #ff9900;
+  color: #ad630f;;
 }
 
 /* =============================
