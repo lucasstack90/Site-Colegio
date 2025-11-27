@@ -12,8 +12,8 @@ img {
   width: 800px;
 }
 
-/* Botão Whatzapp*/
- .whatsapp-float {
+/* Botão WhatsApp */
+.whatsapp-float {
   position: fixed;
   width: 60px;
   height: 60px;
@@ -28,62 +28,98 @@ img {
   z-index: 1000;
   transition: all 0.3s ease;
 }
+
 .whatsapp-float:hover {
   background-color: #20b85b;
   transform: scale(1.1);
   color: #fff;
 }
+
 .whatsapp-float i {
   margin-top: 13px;
 }
 
-.posicionamento a{
+.posicionamento a {
   display: inline-block;
   margin: 10px 0 0 -3px;
 }
-h3{
+
+h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
 
-
 /* =============================
    HEADER
 ============================= */
-header {
-  background-color: #232424;
-  text-align: center;
-  padding: 40px 0 10px 0;
-  font-family: 'Montserrat', sans-serif;
+.header-gamer {
+  background: linear-gradient(135deg, #0a0a0a, #1e1e1e, #0f0f0f);
+  padding: 25px 0;
 }
 
-.logo {
-  width: 150px;
-  transition: transform 0.3s ease;
+/* Logo */
+.logo-gamer {
+  width: 170px;
+  height: auto;
+  border-radius: 10px;
 }
 
-.logo:hover {
-  transform: scale(1.1);
+/* Nome */
+.nome-site {
+  font-size: 1.4rem;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
+/* Links do menu */
+.efeito-menu {
+  color: #d1d1d1;
+  margin: 0 10px;
+  transition: .3s ease-in-out;
+  font-weight: 500;
+}
 
+.efeito-menu:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
+}
 
-/* Área do bloco */
+/* Botão gamer */
+.btn-gamer {
+  background: #6a00ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: .3s ease-in-out;
+  font-weight: bold;
+}
+
+.btn-gamer:hover {
+  background: #8a33ff;
+  box-shadow: 0 0 10px #8a33ff;
+}
+
+/* Menu alinhado */
+.alinhamento-menu .nav-link {
+  font-size: 16px;
+}
+
+/* =============================
+   BLOCO BILÍNGUE
+============================= */
 .bloco-bilingue {
   background: #ffffff00;
   color: #333;
 }
 
-/* Título */
 .titulo-bloco {
   font-size: 27px;
   font-weight: 700;
-  color: #5a2cff; /* roxo igual ao da imagem */
+  color: #5a2cff;
   margin-bottom: 20px;
   position: relative;
 }
 
-/* Barrinha abaixo do título */
 .titulo-bloco::after {
   content: "";
   width: 60px;
@@ -95,14 +131,13 @@ header {
   border-radius: 5px;
 }
 
-/* Parágrafos */
 .descricao-bloco {
   font-size: 1.1rem;
   line-height: 1.7;
   color: #fff7f7;
 }
 
-/* Botão SAIBA MAIS */
+/* Botão Saiba Mais */
 .saiba-mais {
   display: inline-block;
   margin-top: 15px;
@@ -117,49 +152,48 @@ header {
   letter-spacing: 1px;
 }
 
-/* Vídeo */
+/* =============================
+   VÍDEOS
+============================= */
 .video-container {
   width: 100%;
-  border-radius: 10px;
+  max-width: 900px;
+  border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0,0,0,0.15);
 }
 
-/* Vídeo primeiro dia de aula*/
-.Avideo-container{
-padding: 20px;
-border-radius: 25px;
+.Avideo-container {
+  padding: 20px;
+  border-radius: 25px;
 }
 
-
-.video-title{
-font-size: 1.6rem;
-font-weight: bold;
-margin-bottom: 15px;
-text-align: center;
+.video-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
-/* Vídeo primeiro dia de aula*/
-.text-video{
+.text-video {
   color: white;
   text-align: center;
   margin: 6px;
 }
 
-
-
-/* Img Logo e Titulo */
+/* =============================
+   LOGOS & RODAPÉ
+============================= */
 .site-title img {
   width: 150px;
   aspect-ratio: 4/2;
 }
 
-/* img rodapé */
-.logo-rodapé{
+.logo-rodapé {
   margin-top: 30px;
 }
 
-.Bloco4 img{
+.Bloco4 img {
   height: 50px;
 }
 
@@ -175,11 +209,6 @@ text-align: center;
   padding-bottom: 5px;
 }
 
-.nav-link:hover {
-  color: rgb(56, 15, 241);
-}
-
-/* Linha colorida animada no hover */
 .nav-link::after {
   content: "";
   position: absolute;
@@ -200,8 +229,7 @@ text-align: center;
   font-weight: 600;
 }
 
-
-/* Do Rodapé */
+/* Rodapé Hover */
 .txt-hover {
   color: white;
   transition: text-shadow 0.3s ease;
@@ -210,7 +238,6 @@ text-align: center;
 .txt-hover:hover {
   text-shadow: 0 0 10px rgb(251, 251, 251);
 }
-
 
 /* =============================
    TEXTOS PRINCIPAIS
@@ -238,11 +265,11 @@ h3 {
 }
 
 /* =============================
-   HISTÓRIA DO COLÉGIO / SEÇÕES
+   SEÇÕES DO COLÉGIO
 ============================= */
 .section-colegio {
   background: #27232300;
-  color: rgb(255, 255, 255);
+  color: #fff;
 }
 
 .titulo-colegio {
@@ -266,7 +293,7 @@ h3 {
 }
 
 /* =============================
-   CARROSSEL DE IMAGENS
+   CARROSSEL
 ============================= */
 .carousel-item img {
   height: 550px;
@@ -301,30 +328,11 @@ h3 {
 
 .social-icons a:hover {
   text-shadow: 0 0 10px #ad630f;
-
 }
 
 /* =============================
-   VÍDEOS / IFRAME
+   MAPS & IFRAME
 ============================= */
-.video-container {
-  width: 100%;
-  max-width: 900px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-
-.img-container{
-  width: 100%;
-  height: 600px;
-  max-width: 900px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Google Maps responsivo */
 .map-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
@@ -342,27 +350,25 @@ h3 {
   position: absolute;
 }
 
-
-
+/* Vídeo custom */
 .Yvideo-container {
-    position: relative;
-    width: 100%;
-    height: 30%;
-    padding-bottom: 56.25%; /* proporção 16:9 */
-    background: #000;
-    border-radius: 10px;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 30%;
+  padding-bottom: 56.25%;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .Yvideo-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* deixa elegante */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
 
 /* =============================
    FOOTER
