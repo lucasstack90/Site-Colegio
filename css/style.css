@@ -53,6 +53,7 @@ h3 {
    HEADER
 ============================= */
 .header-gamer {
+  
   background: linear-gradient(135deg, #0a0a0a, #1e1e1e, #0f0f0f);
   padding: 25px 0;
 }
@@ -84,20 +85,6 @@ h3 {
   text-shadow: 0 0 10px #fff;
 }
 
-/* Botão gamer */
-.btn-gamer {
-  background: #6a00ff;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  transition: .3s ease-in-out;
-  font-weight: bold;
-}
-
-.btn-gamer:hover {
-  background: #8a33ff;
-  box-shadow: 0 0 10px #8a33ff;
-}
 
 /* Menu alinhado */
 .alinhamento-menu .nav-link {
@@ -216,12 +203,12 @@ h3 {
   left: 0;
   width: 0%;
   height: 3px;
-  background-color: #4a088c;
+  background-color: #6109cd;
   transition: 0.3s ease;
 }
 
 .nav-link:hover::after {
-  width: 100%;
+  width: 50px;
 }
 
 .nav-link.active {
@@ -374,7 +361,7 @@ h3 {
    FOOTER
 ============================= */
 footer {
-  background-color: #313232;
+  background: linear-gradient(135deg, #0a0a0a, #1e1e1e, #0f0f0f);
   color: white;
   padding: 50px 0 10px;
 }
@@ -394,7 +381,7 @@ footer {
 }
 
 .footer-bottom {
-  background-color: #313232;
+  background: linear-gradient(135deg, #0a0a0a, #1e1e1e, #0f0f0f);
   color: #ffffff;
   padding: 5px 0;
   font-weight: 500;
