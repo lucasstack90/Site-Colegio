@@ -3,184 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Minha Empresa</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>AnaVanda News</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            background: #0e0e17;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+        }
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+        /* Título da seção */
+        .section-title {
+            font-weight: 700;
+            font-size: 32px;
+            margin-bottom: 40px;
+            border-left: 6px solid #6f42c1;
+            padding-left: 10px;
+        }
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+        /* Card */
+        .news-card {
+            background: #1b1b2e;
+            border-radius: 15px;
+            padding: 25px;
+            transition: all .3s;
+            cursor: pointer;
+            box-shadow: 0 0 0 rgba(0,0,0,0.2);
+        }
 
+        .news-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+        }
+
+        .news-img {
+            border-radius: 12px;
+            transition: transform .3s;
+        }
+
+        .news-card:hover .news-img {
+            transform: scale(1.03);
+        }
+
+        .news-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #b48cff;
+            margin-bottom: 12px;
+        }
+
+        .decor-line {
+            width: 55px;
+            height: 4px;
+            background: #6f42c1;
+            border-radius: 3px;
+        }
+
+        /* WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 22px;
+            right: 22px;
+            background: #25d366;
+            color: #fff;
+            font-size: 30px;
+            padding: 12px 15px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(0,0,0,0.4);
+            transition: transform .3s;
+            z-index: 1000;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
 
+<!-- ======================= HEADER ORIGINAL ======================= -->
 <header class="header-gamer" id="inicio">
     <nav class="navbar navbar-expand-lg navbar-dark container">
       
-      <!-- Logo -->
       <a class="navbar-brand d-flex align-items-center" href="#">
         <img src="img/Logo-Photoroom.png" alt="Logo" class="logo-gamer">
       </a>
-  
-      <!-- Botão mobile -->
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuGamer">
         <span class="navbar-toggler-icon"></span>
       </button>
-  
-      <!-- Menu -->
+
       <div class="collapse navbar-collapse" id="menuGamer">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 alinhamento-menu">
           <li class="nav-item">
-            <a class="nav-link efeito-menu" href="#inicio">Início</a>
+            <a class="nav-link efeito-menu" href="index.html">Início</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link efeito-menu" href="Noticias.html">AnaVanda News</a>
+            <a class="nav-link efeito-menu active" href="#">AnaVanda News</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link efeito-menu" href="contato.html">Contato</a>
           </li>
         </ul>
-  
       </div>
     </nav>
-  </header>
+</header>
+<!-- ================================================================ -->
 
-    <!-- 5 BLOCOS DE NOTÍCIAS NO ESTILO EXATO DO MODELO -->
-<section class="container my-5" style="color: white;">
-    <h2 class="fw-bold mb-4">Últimos Posts:</h2>
 
-    <!-- BLOCO 1 -->
-    <div class="row g-4 align-items-start mb-4 news-block">
-        <div class="col-md-5">
-            <img src="imagens-AVB/🌎 Ganhando o Mundo – Nova Zelândia 🇳🇿__Orgulho define_ 💙_Representando o curso Técnico em Desenvolvimento de Sistemas_ o aluno Nicolas (ca_1.heic" class="img-fluid rounded shadow-sm" alt="Imagem da Notícia">
-        </div>
-        <div class="col-md-7">
-            <h4 class="fw-bold">Ganhando o Mundo 🌏</h4>
-            <p>
-              Orgulho define! 💙
-Representando o curso Técnico em Desenvolvimento de Sistemas, o aluno Nicolas (camiseta branca) já viveu essa incrível experiência internacional 🌏, e agora é a vez do Bruno (camiseta preta) embarcar rumo à Nova Zelândia, levando o nome do nosso colégio ainda mais longe! ✈️
+<!-- ====================== SEÇÃO DE NOTÍCIAS ======================= -->
+<section class="container my-5">
+    <h2 class="section-title">Últimos Posts</h2>
 
-            </p>
-            <div class="decor-line my-3"></div>
-        </div>
-    </div>
+    <div class="row g-4">
 
-    <!-- BLOCO 2 -->
-    <div class="row g-4 align-items-start mb-4 news-block">
-        <div class="col-md-5">
-            <img src="imagens-AVB/✨ Projeto Mulheres que Somam 💗 ✨__As meninas de TI mostrando que tecnologia também é empatia_ solidariedade e transformação_ 💙__Com conhecime(.heic" class="img-fluid rounded shadow-sm" alt="Imagem da Notícia">
+        <!-- BLOCO 1 -->
+        <div class="col-md-6">
+            <div class="news-card">
+                <img src="imagens-AVB/🌎 Ganhando o Mundo – Nova Zelândia 🇳🇿__Orgulho define_ 💙_Representando o curso Técnico em Desenvolvimento de Sistemas_ o aluno Nicolas (ca_1.heic" class="img-fluid news-img mb-3">
+                <h4 class="news-title">Ganhando o Mundo 🌏</h4>
+                <p>Orgulho define! 💙 Representando o curso Técnico em Desenvolvimento de Sistemas, o aluno Nicolas já viveu essa incrível experiência internacional...</p>
+                <div class="decor-line"></div>
+            </div>
         </div>
-        <div class="col-md-7">
-            <h4 class="fw-bold">✨ Projeto Mulheres que Somam 💗 ✨</h4>
-            <p>As meninas de TI mostrando que tecnologia também é empatia, solidariedade e transformação! 💙
-Com conhecimento, carinho e atitude, elas estão fazendo a diferença e cuidando da nossa comunidade! 🌸💻</p>
-            <div class="decor-line my-3"></div>
-        </div>
-    </div>
 
-    <!-- BLOCO 3 -->
-    <div class="row g-4 align-items-start mb-4 news-block">
-        <div class="col-md-5">
-            <img src="imagens-AVB/diretores.jpeg" class="img-fluid rounded shadow-sm" alt="Imagem da Notícia">
+        <!-- BLOCO 2 -->
+        <div class="col-md-6">
+            <div class="news-card">
+                <img src="imagens-AVB/✨ Projeto Mulheres que Somam 💗 ✨__As meninas de TI mostrando que tecnologia também é empatia_ solidariedade e transformação_ 💙__Com conhecime(.heic" class="img-fluid news-img mb-3">
+                <h4 class="news-title">✨ Projeto Mulheres que Somam 💗 ✨</h4>
+                <p>As meninas de TI mostrando que tecnologia também é empatia, solidariedade e transformação! 💙</p>
+                <div class="decor-line"></div>
+            </div>
         </div>
-        <div class="col-md-7">
-            <h4 class="fw-bold">Conselheros AVB</h4>
-            <p>Posse dos novos Conselheiros Escolares CAVB gestão de 2025 - 2027 união de esforços para gestão democrática fortalecendo cada vez mais</p>
-            
-            <div class="decor-line my-3"></div>
-        </div>
-    </div>
 
-    <!-- BLOCO 4 -->
-    <div class="row g-4 align-items-start mb-4 ">
-        <div class="col-md-5">
-            <img src="imagens-AVB/Momentos de aprendizado e empatia no Colégio Ana Vanda_ _Os alunos participaram de uma palestra inspiradora com o professor Joel Duarte Junior sobre o tema(.jpg" class="img-fluid rounded shadow-sm" alt="Imagem da Notícia" class="Bloco4">
+        <!-- BLOCO 3 -->
+        <div class="col-md-6">
+            <div class="news-card">
+                <img src="imagens-AVB/diretores.jpeg" class="img-fluid news-img mb-3">
+                <h4 class="news-title">Conselheiros AVB</h4>
+                <p>Posse dos novos Conselheiros Escolares CAVB gestão 2025 - 2027 união de esforços para gestão democrática fortalecendo cada vez mais.</p>
+                <div class="decor-line"></div>
+            </div>
         </div>
-        <div class="col-md-7">
-            <h4 class="fw-bold">Viver no Espectro</h4>
-            <p>Os alunos participaram de uma palestra inspiradora com o professor Joel Duarte Junior sobre o tema *”Viver no Espectro”* — uma conversa sensível e necessária sobre inclusão, compreensão e respeito às diferenças.
-Projeto desenvolvido pelo Grêmio Estudantil do CAVB em parceria com a professora Elza de Farias</p>
 
-            <div class="decor-line my-3"></div>
+        <!-- BLOCO 4 -->
+        <div class="col-md-6">
+            <div class="news-card">
+                <img src="imagens-AVB/Momentos de aprendizado e empatia no Colégio Ana Vanda_ _Os alunos participaram de uma palestra inspiradora com o professor Joel Duarte Junior sobre o tema(.jpg" class="img-fluid news-img mb-3">
+                <h4 class="news-title">Viver no Espectro</h4>
+                <p>Palestra inspiradora com o professor Joel Duarte Junior sobre inclusão, compreensão e respeito às diferenças.</p>
+                <div class="decor-line"></div>
+            </div>
         </div>
+
     </div>
 </section>
+<!-- ================================================================ -->
 
-<style>
-    .decor-line {
-        color: white;
-        width: 40px;
-        height: 4px;
-        background-color: #5c3d91;
-        border-radius: 5px;
-    }
-</style>
 
- <div>
-    <a href="https://wa.me/5542999999999" 
-   class="whatsapp-float" 
-   target="_blank" 
-   aria-label="Fale conosco no WhatsApp">
-   <i class="bi bi-whatsapp"></i>
+<!-- WHATSAPP -->
+<a href="https://wa.me/5542999999999" class="whatsapp-float" target="_blank">
+    <i class="bi bi-whatsapp"></i>
 </a>
-  </div>
 
 
- <footer id="rodape">
+<!-- ======================= RODAPÉ ORIGINAL ======================= -->
+<footer id="rodape">
     <div class="container">
       <div class="row align-items-start">
-        <!-- Logo -->
-        <div class="col-md-3 text-center text-md-start mb-4 mb-md-0 footer-logo">
+
+        <div class="col-md-3 text-center text-md-start mb-4 footer-logo">
           <img src="img/Logo-Photoroom.png" alt="Logo Lobo" style="margin-top: 30px;" class="logo">
         </div>
 
-        <!-- Mapa do site -->
-        <div class="col-md-3 mb-4 mb-md-0">
+        <div class="col-md-3 mb-4">
           <div class="footer-title">Mapa do Site</div>
           <ul class="list-unstyled">
-
-            <li><a href="#inicio" class=" text-decoration-none txt-hover">Inicio</a></li>
-            
-            <li><a href="contato.html" class=" text-decoration-none txt-hover">Contato</a></li>
+            <li><a href="#inicio" class="text-decoration-none txt-hover">Inicio</a></li>
+            <li><a href="contato.html" class="text-decoration-none txt-hover">Contato</a></li>
           </ul>
         </div>
 
-        <!-- Endereço -->
-        <div class="col-md-3 mb-4 mb-md-0">
+        <div class="col-md-3 mb-4">
           <div class="footer-title">Endereço</div>
-          <p class="mb-0">Rua das Acácias - 60, Núcleo Pérola D' Oeste, Bairro Trianon.<br>
-            <br>
-            Guarapuava - PR - CEP: 85012-130
-          </p>
-          <br>
+          <p>Rua das Acácias - 60, Núcleo Pérola D'Oeste, Bairro Trianon.<br><br>Guarapuava - PR - CEP: 85012-130</p>
         </div>
-        
 
-        <!-- Contato -->
         <div class="col-md-3">
           <div class="footer-title">Contato</div>
-          <p class="mb-3">(42)3623-3394 
-            
-          </p>
+          <p>(42)3623-3394</p>
           <div class="social-icons color">
             <a href="https://www.facebook.com/anavanda.bassara.3/?locale=pt_BR" target="_blank"><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/cavbanavandabassara/#" target="_blank"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
 
-         <!-- Rodapé inferior -->
-  <div class="footer-bottom">
-    <p>Ana Vanda - Todos os direitos reservados</p>
-  </div>
-  
+        <div class="footer-bottom">
+          <p>Ana Vanda - Todos os direitos reservados</p>
+        </div>
+
       </div>
     </div>
-  </footer>
+</footer>
+<!-- ================================================================ -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

@@ -14,6 +14,127 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
+
+<style>
+      /* ---------------------------
+         Paleta (combina com header/rodapé)
+         primary-dark: azul escuro
+         accent: dourado suave
+         neutral backgrounds
+         --------------------------- */
+      :root{
+        --primary-dark: #10223b;   /* tom azul escuro institucional */
+        --card-bg: #ffffff;
+        --muted: #6b7280;
+        --soft-shadow: 0 8px 30px rgba(16,34,59,0.12);
+        --glass: rgba(255,255,255,0.85);
+      }
+
+      /* Reset / base */
+      *{box-sizing: border-box}
+      body{
+        margin:0;
+        font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        background: linear-gradient(180deg, #f6f7fb 0%, #eef2f8 100%);
+        color: #1f2937;
+        -webkit-font-smoothing:antialiased;
+        -moz-osx-font-smoothing:grayscale;
+      }
+    
+
+      /* ---------- Page container spacing ---------- */
+      .page-wrap{ padding: 56px 0 80px; } /* space below sticky header */
+
+      /* ---------- Form & info layout ---------- */
+      .panel {
+        border-radius: 14px;
+        background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,250,252,0.98));
+        box-shadow: var(--soft-shadow);
+        border: 1px solid rgba(16,34,59,0.04);
+        padding: 28px;
+      }
+
+      h2 { color: var(--primary-dark); font-weight:700; }
+      .text-color{ color: var(--primary-dark); }
+
+      /* Inputs */
+      .form-control, .form-select {
+        border-radius: 10px;
+        border: 1px solid #e6e9ef;
+        padding: 12px 14px;
+        transition: box-shadow .18s, border-color .18s, transform .08s;
+        background: #fff;
+      }
+      .form-control:focus, .form-select:focus {
+        outline: none;
+        border-color: rgba(21,101,192,0.18);
+        box-shadow: 0 6px 18px rgba(16,34,59,0.06);
+        transform: translateY(-1px);
+      }
+
+      label.form-label{ font-weight:600; color:#344054; }
+
+      /* Enviar */
+      .btn-send {
+        background: linear-gradient(90deg, var(--primary-dark), #153256);
+        color: #fff;
+        border: none;
+        padding: 12px 16px;
+        border-radius: 12px;
+        font-weight: 700;
+        box-shadow: 0 8px 20px rgba(16,34,59,0.12);
+        transition: transform .14s ease, box-shadow .14s ease;
+      }
+      .btn-send:hover{ transform: translateY(-4px); box-shadow: 0 14px 36px rgba(16,34,59,0.16); }
+
+      /* Card - Dados */
+      .info-card{
+        border-radius: 12px;
+        padding: 20px;
+        background: linear-gradient(180deg, rgba(255,255,255,0.99), rgba(250,250,252,0.99));
+        border: 1px solid rgba(16,34,59,0.04);
+      }
+      .info-card .list-unstyled li{ margin-bottom:12px; color:#344054; font-weight:500; }
+      .info-card i{ color:var(--primary-dark); background: rgba(16,34,59,0.06); padding:6px; border-radius:8px; margin-right:10px; }
+
+     
+     
+
+      /* Map responsiveness & style */
+      .map-responsive{ border-radius:12px; overflow:hidden; border:1px solid rgba(16,34,59,0.04); box-shadow: 0 8px 30px rgba(16,34,59,0.06); }
+      .map-responsive iframe{ width:100%; height:340px; border:0; display:block; }
+
+     
+     
+   
+
+      /* Small devices tweaks */
+      @media (max-width: 991px){
+        .logo-gamer{ width:62px; }
+      }
+      @media (max-width: 768px){
+        .page-wrap{ padding-top: 88px; }
+        .map-responsive iframe{ height:260px; }
+      }
+      @media (max-width: 420px){
+        .btn-send{ font-size:15px; padding:10px; }
+      }
+
+      /* subtle entrance animation for panels */
+      .reveal{
+        opacity:0;
+        transform:translateY(18px);
+        animation: revealUp .7s ease forwards;
+      }
+      .reveal.delay-1{ animation-delay: .08s; }
+      .reveal.delay-2{ animation-delay: .16s; }
+      @keyframes revealUp{
+        to{ opacity:1; transform:translateY(0); }
+      }
+
+    </style>
+
+
 </head>
 <body>
 
@@ -48,87 +169,98 @@
     </nav>
   </header>
 
-      <br>
-      <br>
-      <br>
-   
+      
 
+
+ <main class="page-wrap">
     <div class="container">
-        <div class="row">
+      <div class="row gy-4">
 
-            <div class="col-lg-6 mb-4">
-                <h2 class="mb-4 text-color">Envie sua Mensagem</h2>
-                <form>
-                    <div class="mb-3">
-                        <label for="nome" class="form-label">Nome Completo</label>
-                        <input type="text" class="form-control" id="nome" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="assunto" class="form-label">Assunto</label>
-                        <select class="form-select" id="assunto">
-                            <option selected>Selecione um Assunto</option>
-                            <option value="duvidas">Dúvidas Gerais</option>
-                            <option value="suporte">Suporte Técnico</option>
-                            <option value="comercial">Comercial</option>
-                        </select>
-                    </div>
-                    <div class="mb-3 text-color">
-                        <label for="mensagem" class="form-label">Mensagem</label>
-                        <textarea class="form-control" id="mensagem" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-secondary btn-lg w-100">
-                        <i class="bi bi-send-fill me-2"></i> Enviar
-                    </button>
-                </form>
-            </div>
+        <!-- FORM -->
+        <div class="col-lg-6 reveal delay-1">
+          <div class="panel">
+            <h2 class="mb-2">Envie sua Mensagem</h2>
+            <div class="title-line"></div>
 
-            <div class="col-lg-6 text-color" >
-                <h2 class="mb-4 text-color">Nossos Dados</h2>
-
-                <div class="card p-3 mb-4 shadow-sm">
-                    <ul class="list-unstyled">
-                        <li class="mb-2">
-                            <i class="bi bi-geo-alt-fill text-secondary me-2"></i> 
-                            <strong>Endereço:</strong> Rua das Acácias - 60, Núcleo Pérola D' Oeste, Bairro Trianon.
-                        </li>
-                        <li class="mb-2">
-                            <i class="bi bi-telephone-fill text-secondary me-2"></i> 
-                            <strong>Telefone:</strong> (11) 98765-4321
-                        </li>
-                        <li class="mb-2">
-                            <i class="bi bi-envelope-fill text-secondary me-2"></i> 
-                            <strong>Email:</strong> contato@minhaempresa.com.br
-                        </li>
-                        <li class="mb-2">
-                            <i class="bi bi-clock-fill text-secondary me-2"></i> 
-                            <strong>Horário:</strong> Seg. a Sex. das 7h às 18h
-                        </li>
-                    </ul>
+            <!-- FORMULÁRIO: conteúdo intacto -->
+            <form>
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome Completo</label>
+                    <input type="text" class="form-control" id="nome" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="assunto" class="form-label">Assunto</label>
+                    <select class="form-select" id="assunto">
+                        <option selected>Selecione um Assunto</option>
+                        <option value="duvidas">Dúvidas Gerais</option>
+                        <option value="suporte">Suporte Técnico</option>
+                        <option value="comercial">Comercial</option>
+                    </select>
+                </div>
+                <div class="mb-3 text-color">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" rows="5" required></textarea>
                 </div>
 
-                <h3 class="mb-3 text-color">Onde Estamos</h3>
-                <div class="map-responsive">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.1452630308654!2d-51.4541372!3d-25.3999477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef49df9ebe7031%3A0xf2d79c929884c884!2sCol%C3%A9gio%20Estadual%20Ana%20Vanda%20Bassara!5e0!3m2!1spt-BR!2sbr!4v1763585118646!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
+                <button type="submit" class="btn btn-send w-100">
+                    <i class="bi bi-send-fill me-2"></i> Enviar
+                </button>
+            </form>
+          </div>
         </div>
+
+        <!-- INFO + MAP -->
+        <div class="col-lg-6 reveal delay-2">
+          <div class="info-card">
+            <h2 class="mb-1">Nossos Dados</h2>
+            <div class="title-line" style="width:48px"></div>
+
+            <div class="card-body p-0 mt-3">
+              <ul class="list-unstyled mb-0">
+                  <li class="mb-2">
+                      <i class="bi bi-geo-alt-fill me-2"></i>
+                      <strong>Endereço:</strong> Rua das Acácias - 60, Núcleo Pérola D' Oeste, Bairro Trianon.
+                  </li>
+                  <li class="mb-2">
+                      <i class="bi bi-telephone-fill me-2"></i>
+                      <strong>Telefone:</strong> (11) 98765-4321
+                  </li>
+                  <li class="mb-2">
+                      <i class="bi bi-envelope-fill me-2"></i>
+                      <strong>Email:</strong> contato@minhaempresa.com.br
+                  </li>
+                  <li class="mb-2">
+                      <i class="bi bi-clock-fill me-2"></i>
+                      <strong>Horário:</strong> Seg. a Sex. das 7h às 18h
+                  </li>
+              </ul>
+            </div>
+
+            <h3 class="mt-4 mb-2 text-color">Onde Estamos</h3>
+
+            <div class="map-responsive mt-2">
+              <!-- iframe mantém exatamente a origem que você enviou -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.1452630308654!2d-51.4541372!3d-25.3999477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef49df9ebe7031%3A0xf2d79c929884c884!2sCol%C3%A9gio%20Estadual%20Ana%20Vanda%20Bassara!5e0!3m2!1spt-BR!2sbr!4v1763585118646!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </main>
 
-<br>
-<br>
+  <!-- WhatsApp flutuante (mantive link original) -->
+  <a href="https://wa.me/5542999999999" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
+     <i class="bi bi-whatsapp"></i>
+  </a>
 
- <div>
-    <a href="https://wa.me/5542999999999" 
-   class="whatsapp-float" 
-   target="_blank" 
-   aria-label="Fale conosco no WhatsApp">
-   <i class="bi bi-whatsapp"></i>
-</a>
-  </div>
+
+
+
 
   <footer>
     <div class="container">
