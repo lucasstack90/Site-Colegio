@@ -488,3 +488,25 @@ footer {
     height: 250px;
   }
 }
+
+
+
+
+/* Small devices tweaks */
+@media (max-width: 991px){
+  .logo-gamer{ width:62px; }
+}
+
+@media (max-width: 768px){
+  .page-wrap{ padding-top:88px; }
+  .map-responsive iframe{ height:260px; }
+}
+
+@media (max-width: 420px){
+  .btn-send{
+    font-size:15px;
+    padding:10px;
+  }
+}
+
+
