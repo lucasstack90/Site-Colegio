@@ -282,39 +282,47 @@ h3 {
 /* =============================
    CARROSSEL
 ============================= */
-.carousel-item img {
-  height: 550px;
+.carousel-img {
+  height: 60vh;              /* altura dinâmica */
+  object-fit: cover;         /* evita distorção */
+  object-position: center;   /* foca no meio */
+  border-radius: 8px;        /* opcional: bordas suaves */
+}
+
+/* telas pequenas */
+@media (max-width: 576px) {
+  .carousel-img {
+    height: 40vh;
+  }
+}
+
+/* tablets */
+@media (min-width: 577px) and (max-width: 992px) {
+  .carousel-img {
+    height: 50vh;
+  }
+}
+
+.carousel-img {
+  height: 70vh;
   object-fit: cover;
+  
+  object-position: 50% 43%; /* 30% puxa levemente pra cima */
 }
 
-/* Indicadores */
-.carousel-indicators [data-bs-target] {
-  background-color: #fff;
-  opacity: 0.7;
-}
-
-.carousel-indicators .active {
-  opacity: 1;
-}
-
-/* Setas brancas */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(100%);
-}
 
 /* =============================
    ÍCONES SOCIAIS
 ============================= */
 .social-icons a {
-  color: #e28214;
+  color: #1b40c6;
   font-size: 1.6rem;
   margin-right: 20px;
   transition: text-shadow 0.3s ease;
 }
 
 .social-icons a:hover {
-  text-shadow: 0 0 10px #ad630f;
+  text-shadow: 0 0 10px #630fad;
 }
 
 /* =============================
@@ -381,7 +389,6 @@ footer {
 }
 
 .footer-bottom {
-  background: linear-gradient(135deg, #0a0a0a, #1e1e1e, #0f0f0f);
   color: #ffffff;
   padding: 5px 0;
   font-weight: 500;
@@ -397,4 +404,87 @@ footer {
 
 .td p {
   font-size: 14px;
+}
+
+
+
+ /* --- BLOCO --- */
+.bloco-texto {
+  padding: 20px;
+}
+
+/* --- TÍTULO --- */
+.titulo-bloco {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #602ac5;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+/* --- PARÁGRAFOS --- */
+.descricao-bloco {
+  font-size: 1.05rem;
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* --- LINK SAIBA MAIS --- */
+.saiba-mais {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 700;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.saiba-mais:hover {
+  color: #0056b3;
+  padding-left: 5px;
+}
+
+/* --- IMAGEM PRO --- */
+.img-container {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* deixa bonito sem distorcer */
+  object-position: center; /* foca no meio */
+  transition: 0.4s;
+}
+
+/* --- Efeito suave ao passar o mouse --- */
+.img-container:hover img {
+  transform: scale(1.05);
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 992px) {
+  .img-container {
+    height: 300px;
+    margin-top: 25px;
+  }
+
+  .titulo-bloco {
+    font-size: 1.7rem;
+  }
+
+  .descricao-bloco {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .img-container {
+    height: 250px;
+  }
 }
